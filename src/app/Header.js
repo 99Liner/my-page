@@ -9,47 +9,47 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
-
+//This is just the header for global
 function appBarLabel(label) {
   return (
     <Toolbar>
-      <Typography variant="h5" noWrap component="div" sx={{ flexGrow: 1 }}>
+      <Typography variant="h5" noWrap component="div" color= ' #3b3147' sx={{ flexGrow: 1 }}>
         {label}
       </Typography>
     </Toolbar>
   );
 }
 
-const theme = createTheme({
-  palette: {
-    mode: 'light',
-    primary: {
-      main: '#e91e63',
-      contrastText: '#e91e63',
-    },
-    secondary: {
-      main: '#000',
-      dark: '#002884',
-      contrastText: '#fff',
-    },
-  },
-});
-
+//Header sections
 export default function Header() {
   return (
     
     <Box sx={{  display: 'flex' }}>
-      <ThemeProvider theme={theme}>
-      <AppBar position="fixed" color="primary" >
-       {appBarLabel('light')}
+    
+      <AppBar position="fixed"  >
+       {appBarLabel('Denice Space')}
         <Toolbar>
-          <Typography variant="h5" component="div" color= "secondary" sx={{ flexGrow: 1 }}>
-            News
+          <Typography variant="h5" component="div" color = ' #9f6ca1' sx={{ flexGrow: 1 }}> 
+            Home
+          </Typography> 
+
+          <Typography variant="h6" component="div" color = ' #9f6ca1' sx={{ flexGrow: 1 }}> 
+            Projects
           </Typography>
-          <Button color="secondary" >Login</Button>
+          <Typography variant="h6" component="div" color = ' #9f6ca1' sx={{ flexGrow: 1 }}> 
+            _______________
+          </Typography>
+
+          <Typography variant="h6" component="div" color = ' #9f6ca1' sx={{ flexGrow: 1 }}> 
+            About
+          </Typography>
+
+          <Typography variant="h6" component="div" color = ' #9f6ca1' sx={{ flexGrow: 1 }}> 
+            Collections
+          </Typography>
         </Toolbar>
       </AppBar>
-      </ThemeProvider>
+    
     </Box>
   );
 }
