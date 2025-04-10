@@ -1,12 +1,12 @@
 //import Image from 'next/image'
 import styles from './page.module.css';
-import layout from './layout.js';
+import Layout from './layout.js';
 
 
 //Page is the Home page 
 export default function Home() {
   return (
-    <layout>
+    <Layout>
     <main className={styles.main}>
       <div className={styles.description}>
         <h1> Welcome this is the Home page YUUUP </h1>
@@ -18,6 +18,6 @@ export default function Home() {
       </div>
 
     </main>
-    </layout>
+    </Layout>
   )
 }
