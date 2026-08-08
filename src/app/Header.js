@@ -12,8 +12,8 @@ export default function Header() {
       <nav className="header-nav">
         <Link href="/">Homepage</Link>
         <Link href="/projects">Projects</Link>
-        <Link href="/about">Documentation Samples</Link>
-        <Link href="/collections">Contact info</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/docs">Documentation Samples</Link>
       </nav>
     </header>
   );

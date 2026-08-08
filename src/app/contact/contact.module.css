@@ -1,0 +1,323 @@
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contactPage {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 70px 25px 120px;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contactSection {
+  width: 90%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  background: transparent;
+}
+
+.contactSection h1 {
+  margin: 0 0 35px;
+
+  text-align: center;
+
+  color: #2d2435;
+  font-size: 2rem;
+
+  background: transparent;
+}
+
+
+/* =========================
+   CONTACT FORM BOX
+========================= */
+
+.contactForm {
+  width: 100%;
+
+  padding: 40px 50px;
+
+  box-sizing: border-box;
+
+  background-color: #f0dfad;
+
+  border-radius: 28px;
+}
+
+
+/* Name + Email row */
+
+.formRow {
+  display: flex;
+  gap: 25px;
+
+  margin-bottom: 25px;
+
+  background: transparent;
+}
+
+
+/* Each input section */
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  gap: 8px;
+
+  background: transparent;
+}
+
+.formGroup label {
+  color: #3b3147;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  background: transparent;
+}
+
+
+/* Inputs + Message Box */
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+
+  padding: 14px 18px;
+
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: #fffaf0;
+  color: #3b3147;
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  outline: none;
+}
+
+.formGroup textarea {
+  min-height: 160px;
+
+  resize: vertical;
+}
+
+
+/* Placeholder text */
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #9b929e;
+}
+
+
+/* Disabled for now */
+
+.formGroup input:disabled,
+.formGroup textarea:disabled {
+  opacity: 1;
+}
+
+
+/* =========================
+   BOTTOM OF FORM
+========================= */
+
+.formBottom {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 25px;
+
+  background: transparent;
+}
+
+.comingSoon {
+  color: #756879;
+
+  font-size: 0.9rem;
+  font-style: italic;
+
+  background: transparent;
+}
+
+.sendButton {
+  padding: 11px 32px;
+
+  border: none;
+  border-radius: 30px;
+
+  background-color: #9bb3e8;
+
+  color: white;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.sendButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =========================
+   SOCIALS
+========================= */
+
+.socialSection {
+  width: 90%;
+  max-width: 650px;
+
+  margin: 90px auto 0;
+  padding: 30px 35px 38px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: #cbd3e6;
+  border-radius: 25px;
+}
+
+/* Socials title */
+.socialSection h2 {
+  margin: 0 0 28px;
+
+  color: #2d2435;
+  font-size: 1.8rem;
+
+  background: transparent;
+}
+
+/* Container for the buttons */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+
+  background: transparent;
+}
+
+/* All social buttons */
+.socialButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 100px;
+  padding: 10px 22px;
+
+  border-radius: 30px;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.socialButton:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.email {
+  background-color: #f23da8;
+}
+
+.github {
+  background-color: #9671ad;
+}
+
+.linkedin {
+  background-color: #4c73eb;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .socialSection {
+    width: calc(100% - 30px);
+
+    margin-top: 60px;
+    padding: 28px 20px;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .socialButton {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .contactPage {
+    padding: 45px 15px 80px;
+  }
+
+  .contactSection {
+    width: 100%;
+  }
+
+  .contactForm {
+    padding: 30px 20px;
+
+    border-radius: 22px;
+  }
+
+  .formRow {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .formBottom {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .comingSoon {
+    text-align: center;
+  }
+
+  .sendButton {
+    width: 100%;
+  }
+}

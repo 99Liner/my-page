@@ -18,8 +18,8 @@ export default function Home() {
           />
 
           <div className={styles.heroText}>
-            <h1>Denice Jaquez</h1>
-            <p>Portfolio</p>
+            <h1>Software Engineer</h1>
+            <p>Denice's Portfolio</p>
           </div>
 
         </div>
