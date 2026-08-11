@@ -14,10 +14,6 @@ export default function Contact() {
 
         {/* 
           EMAIL FORM PLACEHOLDER
-
-          This form is visual only for now.
-          Later we can connect it to an API route,
-          EmailJS, Resend, Formspree, etc.
         */}
         <form className={styles.contactForm}>
           <div className={styles.formRow}>
