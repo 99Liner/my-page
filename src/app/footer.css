@@ -1,0 +1,151 @@
+.footer {
+  width: 100%;
+  padding: 55px 45px 45px;
+  box-sizing: border-box;
+  background-color: #2d2435;
+  color: #fff7e8;
+}
+
+.footer-name,
+.footer-name h2,
+.footer-content,
+.footer-column,
+.footer-socials,
+.footer-credit,
+.footer p {
+  background: transparent;
+}
+
+.footer-name h2 {
+  margin: 0 0 55px;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff7e8;
+  background: transparent;
+}
+
+
+/* MAIN CONTENT*/
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 50px;
+  background: transparent;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-label {
+  margin: 0 0 12px;
+  color: #bcaec4;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.footer-column p {
+  margin-top: 0;
+}
+
+.footer-location-label {
+  margin-top: 28px;
+}
+
+.footer a {
+  color: #fff7e8;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer a:hover {
+  color: #c9a5d0;
+}
+
+
+/* SOCIALS */
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.footer-socials a {
+  padding: 8px 0;
+  border-bottom: 1px solid #7d7084;
+  font-size: 1.35rem;
+}
+
+.footer-credit {
+  font-size: 1.25rem;
+  background: transparent;
+}
+
+.footer-credit p {
+  margin-top: 0;
+}
+
+.footer-credit span {
+  color: #c9a5d0;
+}
+
+.copyright {
+  margin-top: 35px !important;
+  color: #9e91a5;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 850px) {
+
+  .footer {
+    padding: 45px 30px;
+  }
+
+  .footer-name h2 {
+    margin-bottom: 45px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+
+  .footer-credit {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 40px 22px;
+  }
+
+  .footer-name h2 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-socials {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .footer-credit {
+    grid-column: auto;
+    font-size: 1.1rem;
+  }
+}

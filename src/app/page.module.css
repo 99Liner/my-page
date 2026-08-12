@@ -1,33 +1,22 @@
-/* =========================
-   MAIN PAGE
-========================= */
-
 .main {
   width: 100%;
 }
 
-
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO SECTION */
 
 .hero {
   min-height: 75vh;
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   padding: 60px 30px;
 }
 
 .heroContent {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   max-width: 900px;
   width: 100%;
 }
@@ -35,84 +24,63 @@
 .heroImage {
   width: 480px;
   height: auto;
-
   object-fit: cover;
 }
 
 .heroText {
   margin-left: -80px;
-
   position: relative;
   z-index: 2;
-
   white-space: nowrap;
 }
 
 .heroText h1 {
   margin: 0;
-
   color: #2d2435;
-
   font-size: 3rem;
   font-weight: 600;
 }
 
 .heroText p {
   margin: 5px 15px 0 0;
-
   text-align: right;
-
   font-size: 1.2rem;
   font-style: italic;
-
   color: #3b3147;
 }
 
-
-/* =========================
-   ABOUT SECTION
-========================= */
+/* ABOUT SECTION */
 
 .about {
   max-width: 1000px;
-
   margin: 0 auto;
   padding: 80px 30px 120px;
 }
 
 .about h2 {
   text-align: center;
-
   margin-bottom: 50px;
-
   font-size: 1.6rem;
-
   color: #2d2435;
 }
 
 .aboutContent {
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   gap: 70px;
 }
 
 .profileImage {
   width: 180px;
   height: 180px;
-
   object-fit: cover;
-
   border-radius: 50%;
-
   flex-shrink: 0;
 }
 
 .aboutText {
   max-width: 600px;
-
   line-height: 1.7;
 }
 
@@ -122,9 +90,7 @@
 
 .resumeLink {
   display: inline-block;
-
   margin-top: 15px;
-
   color: #9f6ca1;
 
   text-decoration: none;
@@ -135,16 +101,10 @@
   text-decoration: underline;
 }
 
-
-/* =========================
-   TABLET
-========================= */
-
 @media (max-width: 850px) {
 
   .hero {
     min-height: auto;
-
     padding: 50px 20px 90px;
   }
 
@@ -166,11 +126,6 @@
   }
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 600px) {
 
   .hero {
@@ -188,9 +143,7 @@
 
   .heroText {
     margin: -20px 0 0;
-
     text-align: center;
-
     white-space: normal;
   }
 
@@ -200,10 +153,8 @@
 
   .heroText p {
     margin: 5px 0 0;
-
     text-align: center;
   }
-
 
   /* ABOUT */
 
@@ -217,15 +168,13 @@
 
   .aboutContent {
     flex-direction: column;
-
     gap: 30px;
-
     text-align: center;
   }
 
   .profileImage {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: auto;
   }
 
   .aboutText {

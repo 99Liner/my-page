@@ -47,7 +47,7 @@ export default function Home() {
               troubleshooting, documentation, and software systems.
               I am interested in roles involving software development,
               application support, implementation, business analysis,
-              QA testing, and technical problem-solving.
+              and technical problem-solving.
             </p>
 
             <a

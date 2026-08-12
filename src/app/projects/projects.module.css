@@ -1,0 +1,291 @@
+.projectsPage {
+  width: 100%;
+}
+
+.projectIndex {
+  padding-top: 55px;
+}
+
+.projectIndex h1 {
+  margin: 0;
+  padding: 0 45px 45px;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  color: #2d2435;
+}
+
+.projectIndex h1 span {
+  color: #9f6ca1;
+}
+
+/* TOP STRIP */
+
+.projectStrip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(360px, 1fr));
+  width: 100%;
+  border-top: 1px solid rgba(45, 36, 53, 0.25);
+  border-bottom: 1px solid rgba(45, 36, 53, 0.25);
+}
+
+/* PROJECT CARD */
+
+.projectCard {
+  min-height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px 30px;
+  color: #2d2435;
+  border-right: 1px solid rgba(45, 36, 53, 0.25);
+  text-decoration: none;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.projectCard:last-child {
+  border-right: none;
+}
+
+.projectCard:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* PROJECT INFO */
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectNumber {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.projectName {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.projectName h2 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
+.projectName p {
+  margin: 0;
+  color: #756879;
+  font-size: 1rem;
+}
+
+.projectTools {
+  margin-bottom: 30px;
+}
+
+.projectTools h3 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+}
+
+.projectTools p {
+  margin: 0;
+  color: #756879;
+  line-height: 1.6;
+}
+
+.viewProject {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #9f6ca1;
+}
+
+/* CARD IMAGE */
+.cardImageWrapper {
+  width: 100%;
+  margin-top: 35px;
+  overflow: hidden;
+
+  /* Background placeholder space */
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.cardImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.projectCard:hover .cardImage {
+  transform: scale(1.02);
+}
+
+/*PROJECT AREA */
+
+.projectDetails {
+  width: 100%;
+}
+
+.projectDetail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 45px;
+  scroll-margin-top: 100px;
+  border-bottom: 1px solid rgba(45, 36, 53, 0.2);
+}
+
+/* Heading */
+
+.detailHeading {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.detailNumber {
+  font-size: clamp(4rem, 8vw, 7rem);
+  color: #9f6ca1;
+  line-height: 0.8;
+}
+
+.detailHeading h2 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #2d2435;
+}
+
+.detailHeading p {
+  margin: 0;
+  color: #756879;
+  font-size: 1.2rem;
+}
+
+/* Large project image */
+
+.detailImageWrapper {
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.detailImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Project text */
+
+.detailContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.detailContent h3 {
+  margin: 0 0 15px;
+  color: #2d2435;
+}
+
+.detailContent p {
+  margin: 0;
+  color: #4f4454;
+  line-height: 1.7;
+}
+
+
+/*TABLET*/
+
+@media (max-width: 1000px) {
+
+  .projectStrip {
+    grid-template-columns: repeat(3, 330px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .projectCard {
+    min-height: 620px;
+    scroll-snap-align: start;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .projectIndex {
+    padding-top: 35px;
+  }
+
+  .projectIndex h1 {
+    padding: 0 22px 35px;
+    font-size: 2.8rem;
+  }
+
+  .projectStrip {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+  }
+
+  .projectCard {
+    width: 85vw;
+    min-width: 85vw;
+    min-height: 560px;
+    padding: 30px 22px;
+    scroll-snap-align: start;
+  }
+
+
+  .projectNumber {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+  }
+
+  .projectName {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .projectName h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Full project section */
+
+  .projectDetail {
+    padding: 80px 22px;
+    scroll-margin-top: 140px;
+  }
+
+  .detailHeading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .detailNumber {
+    font-size: 4rem;
+  }
+
+  .detailContent {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .detailImageWrapper {
+    padding: 12px;
+  }
+}
