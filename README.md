@@ -1,6 +1,7 @@
 # Denice Portfolio
 
 A personal portfolio website built with **Next.js** to showcase my projects, background, contact information, and professional work.
+(Work in progress)
 
 ## 🌐 Live Site
 
