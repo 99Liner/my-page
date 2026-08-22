@@ -7,7 +7,7 @@ export async function GET() {
     const db = client.db('Portfolio');
 
     const projects = await db
-      .collection('Projects')
+      .collection('projects')
       .find({})
       .toArray();
 
