@@ -106,7 +106,7 @@
 
 /* CARD IMAGE */
 .cardImageWrapper {
-  width: 100%;
+  width: auto;
   margin-top: 35px;
   overflow: hidden;
 
