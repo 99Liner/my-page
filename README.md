@@ -5,7 +5,7 @@ A personal portfolio website built with **Next.js** to showcase my projects, bac
 
 ## 🌐 Live Site
 
-This portfolio is deployed using **GitHub Pages**. https://99liner.github.io/my-page/
+This portfolio is deployed using Vercel https://my-page-peanuts4.vercel.app/ 
 
 > The website is currently a work in progress.
 
